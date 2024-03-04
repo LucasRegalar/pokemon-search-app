@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./styles.css" />
+      <title>pokemon-search-app</title>
+    </head>
+
+    <body>
+      <main>
+        <h1>Pokémon Search App</h1>
+        <div class="card">
+            <form>
+                <label for="search-input">Search for Pokémon Name or ID:</label>
+                <div class="container container__input">
+                    <input id="search-input" type="text"/>
+                    <button id="search-button">Search</button>
+                </div>
+            </form>
+                <div class="container container__main-info">
+                    <div class="flex-container">
+                        <h2 id="pokemon-name">CROCONAW</h2>
+                        <p id="pokemon-id">#159</p>
+                    </div>
+                    <div class="flex-container container--weight-height">
+                        <p id="weight">Weight: 250</p>
+                        <p id="height">Height: 11</p>
+                    </div>
+                    <div class="container container__image">
+                        <img 
+                        id="pokemon-img"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png" 
+                        alt="pokemons-front-default"
+                        />
+                    </div>
+                    <div class="flex-container" id="types">
+                        <p class="water type">WATER</p>
+                    </div>
+                </div>
+                <div id="stats">
+                    <div class="flex-container flex-container--purple">
+                        <p class="bold">Base</p>
+                        <p class="bold">Stats</p>
+                    </div>
+                    <div class="flex-container flex-container--purple">
+                        <p>HP:</p>
+                        <p id="hp">65</p>
+                    </div>
+                    <div class="flex-container flex-container--purple">
+                        <p>Attack:</p>
+                        <p id="attack">	80</p>
+                    </div>
+                    <div class="flex-container flex-container--purple">
+                        <p>Defense:</p>
+                        <p id="defense">80</p>
+                    </div><div class="flex-container flex-container--purple">
+                        <p>Sp. Attack:</p>
+                        <p id="special-attack">59</p>
+                    </div>
+                    <div class="flex-container flex-container--purple">
+                        <p>Sp. Defense:</p>
+                        <p id="special-defense">63</p>
+                    </div>
+                    <div class="flex-container flex-container--purple">
+                        <p>Speed:</p>
+                        <p id="speed">58</p>
+                    </div>
+                </div>
+        </div>
+        <script src="./main.js"></script>
+      </main>
+    </body>
+  </html>
